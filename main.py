@@ -14,6 +14,7 @@ quiz = QuizBrain(question_bank)
 quiz_ui = QuizInterface(quiz)
 
 # Must comment out other while loops because TKinter uses the mainloop (similar to while loop)
+
 # while quiz.still_has_questions():
 #     quiz.next_question()
 
