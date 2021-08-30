@@ -14,7 +14,6 @@ class QuizInterface:
         self.window.config(padx=20, pady=20, bg=THEME_COLOR)
         self.score_label = Label(text="Score: 0", fg="white", bg=THEME_COLOR)
         self.score_label.grid(row=0, column=1)
-
         self.canvas = Canvas(width=300, height=250, bg="white")
         self.question_text = self.canvas.create_text(
             150,
@@ -35,7 +34,6 @@ class QuizInterface:
         self.false_button.grid(row=2, column=1)
 
         self.get_next_question()
-
         self.window.mainloop()
 
     def get_next_question(self):
